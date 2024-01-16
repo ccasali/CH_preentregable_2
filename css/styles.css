@@ -40,10 +40,10 @@ header {
     text-decoration: none;
 }
   
-.titulo:hover {
-    text-decoration: none; 
+
+.titulo a:visited {
+    text-decoration: none;
 }
-  
 
 header img{
     width: auto;
@@ -80,6 +80,10 @@ nav a {
 nav a:hover {
     text-decoration: underline; 
     font-weight: bold;
+}
+
+.titulo a:active {
+    color: initial;
 }
 
 /* main y título de la página*/
@@ -119,7 +123,30 @@ img {
     height: auto;
 }
 
+/* Nosotros */
+
+.contenedor-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15 px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.nosotros-texto {
+    padding-right: 50px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Footer */
+
 footer {
+    margin-top: 80px;
     width: 100%;
     color: #fff;
 }
